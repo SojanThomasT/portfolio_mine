@@ -1,0 +1,146 @@
+/* setting default value */
+:root {
+  --ff-style-1: "Nunito Sans", sans-serif;
+  --ff-style-2: "Bree Serif", serif;
+  --fw-simple: 300;
+  --fw-neutral: 400;
+  --fw-bold: 600;
+  --clr-one: #202823;
+  --clr-two: #ffffff;
+  --clr-three: #66fcf1;
+  --clr-four: #46a29f;
+  --clr-five: #c5c6c8;
+}
+/*default sizing  */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* default page size setting */
+main {
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+#navbar {
+  width: 100vw;
+  height: 5rem;
+  background-color: var(--clr-three);
+}
+#welcome_section {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--clr-four);
+}
+#project {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--clr-three);
+}
+#qualification {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--clr-five);
+}
+#contact {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--clr-one);
+}
+/* navbar designing */
+#navbar ul {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  margin: 15px auto;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+a {
+  text-decoration: none;
+  padding: 1px;
+  gap: 10px;
+  color: var(--clr-one);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: var(--fw-bold);
+  transition: all 0.3s;
+  font-family: var(--ff-style-2);
+}
+a:hover {
+  color: var(--clr-two);
+  border-bottom: 3px solid white;
+}
+a:active {
+  color: var(--clr-two);
+}
+/* making nav bar fixed */
+#navbar {
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+}
+/* making icon and list style none */
+li {
+  list-style: none;
+}
+.logo {
+  display: none;
+  width: 20px;
+  height: 20px;
+}
+/* welcome section design */
+#welcome_section{
+    display: flex;
+    position:absolute;
+}
+#welcome_section #right{
+    position:relative;
+    top: 200px;
+    margin-left: 100px;
+    padding-bottom:10px;
+}
+h4{
+    font-size: 1.5rem;
+}
+h1{
+    font-size: 5rem;
+}
+h3{
+    font-size: 3rem;
+}
+#left img{
+    position: relative;
+    width: 40vw;
+    height: 40vh;
+    border-image: none;
+    top: 200px;
+}
+
+/* mobile design */
+@media screen and (min-width: 768px) {
+  /* #navbar{
+        display:none;
+    }*/
+  .logo {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 769px) {
+  /* .toggle{
+        display:none
+    } */
+  .logo {
+    display: inline-block;
+    z-index: 100;
+  }
+  #logo-txt {
+    display: none;
+  }
+}
