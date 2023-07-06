@@ -3,86 +3,165 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="#" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito+Sans:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <title>Sojan Thomas T</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <main>
-    <!-- navigation section -->
-      <div id="navbar">
-        <ul class="navlink">
-          <li>
-            <lable for="home">
-              <a href="#welcome_section"
-                ><img
-                  class="logo"
-                  src="./images/logos/home.png"
-                  alt="home"
-                  id="home"
-                /><span id="logo-txt"> Home</span></a
-              >
-            </lable>
-          </li>
-          <li>
-            <lable for="pjt">
-              <a href="#project"
-                ><img
-                  class="logo"
-                  src="./images/logos/project.png"
-                  alt="project"
-                  id="pjt"
-                /><span id="logo-txt"> Project</span></a
-              >
-            </lable>
-          </li>
-          <li>
-            <label for="quali">
-              <a href="#qualification"
-                ><img
-                  class="logo"
-                  src="./images/logos/education.png"
-                  alt="qualification"
-                  id="quali"
-                /><span id="logo-txt"> Qualification</span></a
-              >
-            </label>
-          </li>
-          <li>
-            <label for="cnt">
-              <a href="#contact"
-                ><img
-                  class="logo"
-                  src="./images/logos/contact.png"
-                  alt="contact"
-                  id="cnt"
-                /><span id="logo-txt">Contact</span></a
-              >
-            </label>
-          </li>
+    <!-- Hero Section Start -->
+    <div class="hero">
+      <nav>
+        <h2 class="logo">Portfo<span>lio</span></h2>
+        <ul>
+          <li><a href="#home-info">Home</a></li>
+          <li><a href="#about-info">About</a></li>
+          <li><a href="#project-info">Project</a></li>
+          <li><a href="#qualification-info">Qualification</a></li>
+          <li><a href="#contact-info">Contact</a></li>
         </ul>
-      </div>
-    <!--Welcome section -->
-      <div id="welcome_section">
-        <div id="left">
-            <img src="./images/sojan_dp.png" alt="profile_pic">
+
+        <a href="mailto:tsojanthomas235@gmail.com?subject=job" class="btn"
+          >Mail</a
+        >
+      </nav>
+      <div id="home-info" class="content">
+        <h4>Hello, my name is</h4>
+        <h1>Sojan <span>Thomas T</span></h1>
+        <h3>I'm a Web Developer.</h3>
+        <div class="newsletter">
+          <form action="">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Your Email"
+            />
+            <input type="submit" value="Let's Start" name="submit" />
+          </form>
         </div>
-        <div id="right">
-            <h4>Hi!</h4><br>
-            <h1>I'm Sojan Thomas T</h1>
-            <h3>Developer</h3>
-            <button onclick="window.location='#contact'">Hire</button>
+      </div>
+    </div>
+    <!-- About Section Start -->
+    <section id="about-info" class="about">
+      <div class="main">
+        <img src="./images/sojan_dp.jpg" alt="mine" />
+        <div class="about-text">
+          <h2>about <span>me</span></h2>
+          <h5>Developer</h5>
+          <p>
+            I'm T. Sojan Thomas, Self Motivated Mechanical Engineering graduate
+            seeking to transition into the IT field My expertise lies in Python
+            and Django programming languages, and also honed my skills in HTML
+            and CSS, which are crucial for creating visually appealing and
+            functional websites. In addition, I have a personal training in
+            various Microsoft applications, including Word, Excel, PowerPoint. I
+            possess a strong work ethic and an unwavering commitment to personal
+            and professional growth. I am eager to leverage my skills and
+            contribute to the success of any organization that values dedication
+            and talent.
+          </p>
+          <button type="button">Let's Talk</button>
         </div>
       </div>
-      <div id="project"></div>
-      <div id="qualification"></div>
-      <div id="contact"></div>
-    </main>
+    </section>
+    <!-- project section -->
+    <div id="project-info" class="service">
+      <div class="title">
+        <h2>My Projects</h2>
+      </div>
+      <div class="box">
+        <div class="card">
+          <i class="fas fa-bars"></i>
+          <h5>Web Development</h5>
+          <div class="para">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              ipsa officia beatae unde? Ea, sunt magni velit molestiae eaque
+              repellat.
+            </p>
+            <p style="text-align: center">
+              <a class="button" href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="far fa-user"></i>
+          <h5>Web Development</h5>
+          <div class="para">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              ipsa officia beatae unde? Ea, sunt magni velit molestiae eaque
+              repellat.
+            </p>
+            <p style="text-align: center">
+              <a class="button" href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="far fa-bell"></i>
+          <h5>Web Development</h5>
+          <div class="para">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              ipsa officia beatae unde? Ea, sunt magni velit molestiae eaque
+              repellat.
+            </p>
+            <p style="text-align: center">
+              <a class="button" href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- qualification section -->
+    <div id="qualification-info" class="qualification">
+
+    </div>
+    <!--contact me  -->
+    <!-- <div class="contact-me">
+      <p>Let Me Get You A Beautiful Website.</p>
+      <a href="#" class="button-two">Hire Me</a>
+    </div> -->
+    <!-- footer contact section -->
+    <footer>
+      <p>Sojan Thomas T</p>
+      <p>For further more details-please click on the link below</p>
+      <div id="contact-info" class="social">
+        <a
+          href="https://instagram.com/i_m_sojan?igshid=MzNlNGNkZWQ4Mg=="
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://github.com/SojanThomasT" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/sojan-thomas-t-23-05-0000"
+          target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://wa.me/7402270109" target="_blank"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+        <a href="https://www.freecodecamp.org/Sojan_Thomas_T" target="_blank"
+          ><i class="fab fa-free-code-camp"></i
+        ></a>
+      </div>
+      <p class="end">CopyRight By Sojan Thomas T</p>
+    </footer>
   </body>
 </html>
