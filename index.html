@@ -40,12 +40,20 @@
         <h1>Sojan <span>Thomas T</span></h1>
         <h3>I'm a Web Developer.</h3>
         <div class="newsletter">
-          <form action="">
+          <form action="mailto:" method="get">
+            <!-- <form action="mailto:" method="GET">
+  <label for="emailInput">Email:</label>
+  <input type="email" id="emailInput" name="to" required>
+  <input type="submit" value="Compose Email">
+</form>
+ -->
+            <!-- <label for="email"></label> -->
             <input
               type="email"
-              name="email"
+              name="to"
               id="email"
               placeholder="Enter Your Email"
+              required
             />
             <input type="submit" value="Let's Start" name="submit" />
           </form>
@@ -78,47 +86,58 @@
     <!-- project section -->
     <div id="project-info" class="service">
       <div class="title">
-        <h2>My Projects</h2>
+        <h2><span>My</span> Projects</h2>
       </div>
       <div class="box">
         <div class="card">
-          <i class="fas fa-bars"></i>
-          <h5>Web Development</h5>
+          <i class="fab fa-html5"></i>
+          <!-- <i class="fas fa-bars"></i> -->
+          <h5>Product Landing Page</h5>
           <div class="para">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              ipsa officia beatae unde? Ea, sunt magni velit molestiae eaque
-              repellat.
+              Designed a <span>Responsive Bank Landing Page</span> using HTML
+              and CSS, ensuring optimal user experience across devices.
             </p>
             <p style="text-align: center">
-              <a class="button" href="#">Read More</a>
+              <a
+                class="button"
+                href="https://github.com/SojanThomasT/landing_page"
+                target="_blank"
+                >Read More</a
+              >
             </p>
           </div>
         </div>
 
         <div class="card">
-          <i class="far fa-user"></i>
-          <h5>Web Development</h5>
+          <!-- <i class="far fa-user"></i> -->
+          <i class="fab fa-css3-alt"></i>
+          <h5>Testimonal Cards</h5>
           <div class="para">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              ipsa officia beatae unde? Ea, sunt magni velit molestiae eaque
-              repellat.
+              Designed an impressive <span>Testimonial Card</span> project with
+              a responsive layout,by employing HTML and CSS for a flawless user
+              experience.
             </p>
             <p style="text-align: center">
-              <a class="button" href="#">Read More</a>
+              <a
+                class="button"
+                target="_blank"
+                href="https://github.com/SojanThomasT/testimonial_project"
+                >Read More</a
+              >
             </p>
           </div>
         </div>
 
         <div class="card">
-          <i class="far fa-bell"></i>
-          <h5>Web Development</h5>
+          <!-- <i class="far fa-bell"></i> -->
+          <i class="fab fa-python"></i>
+          <h5>Address Book Register</h5>
           <div class="para">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              ipsa officia beatae unde? Ea, sunt magni velit molestiae eaque
-              repellat.
+              Built a Python program for managing an <span>Address Book</span>,
+              allowing users to effortlessly add, update, and delete entries.
             </p>
             <p style="text-align: center">
               <a class="button" href="#">Read More</a>
@@ -129,7 +148,70 @@
     </div>
     <!-- qualification section -->
     <div id="qualification-info" class="qualification">
-
+      <div class="edu-heading">
+        <h2>Educational <span>Background</span></h2>
+      </div>
+      <div class="edu-details">
+        <div class="edu">
+          <div class="clg-name">
+            <i class="fas fa-graduation-cap"></i>
+            <div class="clg-details">
+              <h2>Bachelor of Engineering(B.E)</h2>
+              <p>Narasus Sarathy Institute of Technology</p>
+              <p>2018-2021</p>
+              <p>CGPA:8.57</p>
+            </div>
+          </div>
+          <div class="clg-name">
+            <i class="fas fa-graduation-cap"></i>
+            <div class="clg-details">
+              <h2>Diploma in Mechanical Engineering(DME)</h2>
+              <p>Paavai Polytechnic College</p>
+              <p>2015-2018</p>
+              <p>Percentage-98%</p>
+            </div>
+          </div>
+          <div class="clg-name">
+            <i class="fas fa-school"></i>
+            <div class="clg-details">
+              <h2>Secondary School Leaving Certificate(SSLC)</h2>
+              <p>ST.Thomas Matriculation School</p>
+              <p>2014-2015</p>
+              <p>Percentage-93.4%</p>
+            </div>
+          </div>
+        </div>
+        <div class="certi">
+          <div class="course">
+            <div class="heading-course">
+              <i class="fas fa-certificate"></i>
+              <h2>COURSES</h2>
+            </div>
+            <div class="cur-one" style="padding-left: 50px">
+              <h2>Python and Django</h2>
+              <p>from Accord Info Matrix, Chennai</p>
+            </div>
+            <div class="cur-two" style="padding-left: 50px">
+              <h2>HTML and CSS</h2>
+              <p>from freecodecamp</p>
+            </div>
+          </div>
+          <div class="award">
+            <div class="heading-award">
+              <i class="fas fa-award"></i>
+              <h2>AWARDS</h2>
+            </div>
+            <div class="award-one" style="padding-left: 50px">
+              <h2>Best Student of the Year(2018)</h2>
+              <p>given by Indian Society of Technical Education(ISTE)</p>
+            </div>
+            <div class="award-two" style="padding-left: 50px">
+              <h2>Best Outgoing Student of the Year(2018)</h2>
+              <p>given by Paavai Institute</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!--contact me  -->
     <!-- <div class="contact-me">

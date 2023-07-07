@@ -312,3 +312,119 @@ footer p:nth-child(2) {
   bottom: 35px;
   font-style: 14px;
 }
+.qualification {
+  display: flex;
+  flex-direction: column;
+  background-color: #101010;
+}
+.edu-heading h2 {
+  color: white;
+  font-size: 75px;
+  text-align: center;
+}
+.edu-details {
+  width: 100%;
+  height: 100%;
+
+  padding: 10px 0;
+  display: flex;
+  /* flex-direction: column; */
+}
+.edu {
+  /* border: 5px solid white; */
+  width: 50%;
+  height: 100%;
+  padding: 50px;
+}
+.certi {
+  /* border: 5px solid white; */
+  width: 50%;
+  height: 100%;
+  padding: 50px;
+}
+.clg-name {
+  padding: 20px 35px;
+  background: #191919;
+  border-radius: 20px;
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  /* justify-content:space-between; */
+  overflow: hidden;
+  align-items: center;
+}
+.clg-name i {
+  position: relative;
+  /* top:%; */
+}
+.clg-details h2 {
+  text-transform: capitalize;
+  color: white;
+  font-size: 22px;
+}
+.clg-details p {
+  color: #fcfc;
+  line-height: 25px;
+  font-size: 18px;
+  font-style: italic;
+}
+.clg-name i {
+  font-size: 50px;
+  display: block;
+  /* text-align: center; */
+  margin: 25px 0px;
+  color: #f9004d;
+}
+.award,
+.course {
+  padding: 20px 35px;
+  background: #191919;
+  border-radius: 20px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+  gap: 20px;
+  /* justify-content:left; */
+  overflow: hidden;
+  /* align-items: center; */
+}
+.award-one > h2,
+.award-two > h2,
+.cur-one h2,
+.cur-two h2 {
+  color: white;
+  font-size: 22px;
+  /* text-transform: capitalize; */
+}
+.award-one p,
+.award-two p,
+.cur-one p,
+.cur-two p {
+  color: #fcfc;
+  font-size: 18px;
+  font-style: italic;
+  /* text-transform: capitalize; */
+}
+.heading-award,
+.heading-course {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+}
+.heading-award i,
+.heading-course i {
+  font-size: 30px;
+  display: block;
+  /* text-align: center; */
+  margin: 25px 0px;
+  color: #f9004d;
+}
+.heading-award h2,
+.heading-course h2 {
+  font-size: 25px;
+  color: #f9004d;
+}
